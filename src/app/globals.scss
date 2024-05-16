@@ -11,16 +11,46 @@ $text-black: #0e0e0e;
     "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace",
     "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  background-color: $bg-white;
-  color: $text-black;
-
   // define light color palette
+  --text-87: rgba(0, 0, 0, 87);
+  --text-60: rgba(0, 0, 0, 60);
+  --text-38: rgba(0, 0, 0, 38);
+
+  --bg: #f0f2f5;
+  --panel: #fafafa;
+  --border: #e8e8e8;
+
+  --primary: #2673dd;
+  --primary-20: rgba(38, 115, 221, 0.2);
+  --primary-5: rgba(38, 115, 221, 0.05);
+
+  --warning: #ffbb00;
+  --error: #ee2c4a;
+  --success: #44cc77;
+
+  background-color: var(--bg);
+  color: var(--text-87);
 
   &.dark {
-    background-color: $bg-black;
-    color: $text-white;
-
     // define dark color palette
+    --text-87: rgba(255, 255, 255, 87);
+    --text-60: rgba(255, 255, 255, 60);
+    --text-38: rgba(255, 255, 255, 38);
+
+    --bg: #121212;
+    --panel: #222222;
+    --border: rgba(255, 255, 255, 0.09);
+
+    --primary: #2673dd;
+    --primary-20: rgba(38, 115, 221, 0.3);
+    --primary-5: rgba(38, 115, 221, 0.14);
+
+    --warning: #b2b400;
+    --error: #ab2b30;
+    --success: #309d53;
+
+    background-color: var(--bg);
+    color: var(--text-87);
   }
 }
 

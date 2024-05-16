@@ -13,13 +13,6 @@ import { useTheme } from "../../context/themeContext";
 function Navbar() {
   const pathname = usePathname();
 
-  // const [isDarkMode, setIsDarkMode] = useState(false);
-
-  // const toggleTheme = () => {
-  //   setIsDarkMode(!isDarkMode);
-  //   document.documentElement.classList.toggle("dark");
-  // };
-
   const { isDarkMode, toggleTheme } = useTheme();
 
   return (
