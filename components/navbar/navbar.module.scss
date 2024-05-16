@@ -1,0 +1,62 @@
+.nav {
+  padding: 10px 20px;
+  text-align: left;
+  padding-left: 0%;
+  padding-bottom: 5rem;
+  padding-top: 4rem;
+}
+
+.ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.li {
+  position: relative;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.theme {
+  cursor: pointer;
+
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+.a {
+  text-decoration: none;
+  position: relative;
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -50%; // Position the circle below the text
+    transform: translateX(-50%);
+    width: 6px; // Circle width
+    height: 6px; // Circle height
+    background-color: rgb(121, 56, 56); // Circle color
+    border-radius: 50%; // Make it a circle
+  }
+
+  &.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -50%; // Position the circle below the text
+    transform: translateX(-50%);
+    width: 6px; // Circle width
+    height: 6px; // Circle height
+    background-color: black; // Circle color
+    border-radius: 50%; // Make it a circle
+  }
+}
