@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.scss";
+import ImageModule from "../../components/images_section/images";
 
 export default function Home() {
   return (
@@ -37,20 +38,24 @@ export default function Home() {
           </Link>{" "}
           as a data analyst.
         </p>
-        <div className={styles.headshot}>**INSERT PICTURE HERE**</div>
+        <div className={styles.headshot}>
+          <ImageModule />
+        </div>
 
         <p className={styles.bodyText}>
-          My main focus these days is two-fold {"(1)"} technical recruiting for
-          a full time position and {"(2)"} developing a technical startup within
-          the real estate realm as a complement to my experience as a licensed
-          salesperson.
+          My main focus these days is two-fold{" "}
+          <span className={styles.bolded}>{"(1)"}</span> technical recruiting
+          for a full time position and{" "}
+          <span className={styles.bolded}>{"(2)"}</span> developing a technical
+          startup within the real estate realm as a complement to my experience
+          as a licensed salesperson.
         </p>
         <p className={styles.bodyText}>
-          When I have time to spare, I destress by playing tennis, cooking fancy
-          meals, or learning a new{" "}
-          <span className={styles.lanugageSpan}>language</span>.
+          When I have time to spare, I love to play{" "}
+          <span className={styles.tennisSpan}>tennis</span>,{" "}
+          <span className={styles.cookingSpan}>cook</span> fancy meals, and
+          learn new <span className={styles.lanugageSpan}>languages</span>.
         </p>
-        <div className={styles.contact}>**INSERT CONTACT+SOCIAL HERE**</div>
       </div>
     </div>
   );

@@ -1,34 +1,53 @@
 .wrapper {
   font-weight: 300;
-}
+  display: flex;
+  flex-direction: column;
 
-.heading {
-  padding-bottom: 1.8rem;
-}
+  .heading {
+    padding-bottom: 1.8rem;
 
-.headingText {
-  font-size: 1.5em;
-  font-weight: 600;
-}
+    .headingText {
+      font-size: 1.5em;
+      font-weight: 600;
+    }
 
-.subheadingText {
-  font-size: 1rem;
-}
+    .subheadingText {
+      font-size: 1rem;
+    }
+  }
 
-.body {
-}
+  .body {
+    .bodyText {
+      font-size: 1.1em;
+      padding-bottom: 1rem;
+    }
 
-.bodyText {
-  font-size: 1.1em;
-  padding-bottom: 1rem;
-}
+    .bolded {
+      font-weight: 500;
+    }
 
-.link,
-.lanugageSpan {
-  font-weight: 550;
-  text-decoration: none; // Removes underline from links
+    .link {
+      font-weight: 550;
+      text-decoration: none; // Removes underline from links
 
-  &:hover {
-    color: var(--highlight-ck); // Change to desired hover color
+      &:hover {
+        color: var(--highlight-ck); // Change to desired hover color
+      }
+    }
+
+    .lanugageSpan,
+    .cookingSpan,
+    .tennisSpan {
+      font-weight: 550;
+
+      &:hover {
+        color: var(--highlight-bk); // Change to desired hover color
+      }
+    }
+
+    .headshot {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
   }
 }
