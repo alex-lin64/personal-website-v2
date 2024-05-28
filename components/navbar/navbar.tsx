@@ -48,11 +48,12 @@ function Navbar() {
         </li>
         <li className={styles.li}>
           <Link
-            href="/alex_lin_resume.pdf"
-            target="_blank"
-            className={styles.a}
+            href="/blog"
+            className={`${styles.a} ${
+              pathname === "/blog" ? styles.active : ""
+            }`}
           >
-            resume
+            blog
           </Link>
         </li>
         <li className={styles.li}>

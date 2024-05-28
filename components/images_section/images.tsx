@@ -1,13 +1,18 @@
 import React from "react";
 import styles from "./images.module.scss";
 
-export default function ImageModule() {
+interface ImageProps {
+  imagePath: string;
+}
+
+const ImageModule: React.FC<ImageProps> = ({ imagePath }) => {
   return (
     <div className={styles.containter}>
       <div className={styles.item}>
-        <img src="profile_pic_fun.jpg" />
-        {/* <img src="profile_pic_prof.jpg" /> */}
+        <img src={imagePath} />
       </div>
     </div>
   );
-}
+};
+
+export default ImageModule;

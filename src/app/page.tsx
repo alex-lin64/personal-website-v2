@@ -1,3 +1,5 @@
+import React from "react";
+
 import Link from "next/link";
 import styles from "./page.module.scss";
 import ImageModule from "../../components/images_section/images";
@@ -40,7 +42,7 @@ export default function Home() {
           as a data analyst.
         </p>
         <div className={styles.headshot}>
-          <ImageModule />
+          <ImageModule imagePath="./assets/profile_pic_fun.jpg" />
         </div>
 
         <p className={styles.bodyText}>
