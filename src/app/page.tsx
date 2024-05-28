@@ -52,9 +52,9 @@ export default function Home() {
         </p>
         <p className={styles.bodyText}>
           When I have time to spare, I love to play{" "}
-          <span className={styles.tennisSpan}>tennis</span>,{" "}
-          <span className={styles.cookingSpan}>cook</span> fancy meals, and
-          learn new <span className={styles.lanugageSpan}>languages</span>.
+          <span className={styles.link}>tennis</span>,{" "}
+          <span className={styles.link}>cook</span> fancy meals, and learn new{" "}
+          <span className={styles.link}>languages</span>.
         </p>
       </div>
     </div>

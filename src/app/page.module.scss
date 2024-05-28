@@ -30,18 +30,23 @@
       font-weight: 550;
       text-decoration: none; // Removes underline from links
 
-      &:hover {
-        color: var(--highlight-ck); // Change to desired hover color
+      position: relative;
+
+      &::before {
+        // background: hsl(45 100% 70%);
+        background: var(--highlight-bl);
+        content: "";
+        inset: 0;
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        z-index: -1;
       }
-    }
 
-    .lanugageSpan,
-    .cookingSpan,
-    .tennisSpan {
-      font-weight: 550;
-
-      &:hover {
-        color: var(--highlight-bk); // Change to desired hover color
+      &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
       }
     }
 

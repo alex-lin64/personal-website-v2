@@ -22,7 +22,7 @@
   --error: #ee2c4a;
   --success: #44cc77;
 
-  --highlight-bl: #376ab6;
+  --highlight-bl: rgba(38, 115, 221, 0.2);
   --highlight-bk: rgba(255, 122, 69, 0.87);
   --highlight-ck: rgba(230, 201, 17, 0.87);
   --highlight-sk: rgba(255, 94, 210, 0.87);
@@ -48,6 +48,7 @@
     --error: #ab2b30;
     --success: #309d53;
 
+    --highlight-bl: rgba(28, 100, 202, 0.993);
     --highlight-ck: rgba(250, 219, 20, 0.87);
 
     background-color: var(--bg);
