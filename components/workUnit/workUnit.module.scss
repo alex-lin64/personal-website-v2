@@ -11,8 +11,9 @@
     .date {
       width: 30%;
       display: flex;
-      justify-content: center;
+      justify-content: left;
       padding-top: 0.06rem;
+      margin-right: 2rem;
 
       .dateText {
         font-size: 0.95rem;
@@ -26,7 +27,6 @@
       width: 70%;
       flex-direction: column;
       justify-content: center;
-      max-width: 75%;
 
       .rows {
         .title {
@@ -70,6 +70,27 @@
             font-weight: 500;
           }
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1450px) {
+    .container {
+      flex-direction: column;
+
+      .date {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 0.35rem;
+
+        .dateText {
+          font-size: 0.85rem;
+        }
+      }
+
+      .body {
+        width: 100%;
+        margin: 0;
       }
     }
   }
