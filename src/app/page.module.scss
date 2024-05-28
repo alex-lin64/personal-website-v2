@@ -1,0 +1,58 @@
+.wrapper {
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+
+  .heading {
+    padding-bottom: 1.8rem;
+
+    .headingText {
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+
+    .subheadingText {
+      font-size: 1rem;
+    }
+  }
+
+  .body {
+    .bodyText {
+      font-size: 1.1em;
+      padding-bottom: 1rem;
+    }
+
+    .bolded {
+      font-weight: 500;
+    }
+
+    .link {
+      font-weight: 550;
+      text-decoration: none; // Removes underline from links
+
+      position: relative;
+
+      &::before {
+        // background: hsl(45 100% 70%);
+        background: var(--highlight-bl);
+        content: "";
+        inset: 0;
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        z-index: -1;
+      }
+
+      &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+
+    .headshot {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

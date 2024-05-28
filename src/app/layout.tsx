@@ -5,6 +5,7 @@ import styles from "./layout.module.scss";
 import "./globals.scss";
 
 import Navbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
 import { ThemeProvider } from "../../context/themeContext";
 
 export const metadata: Metadata = {
@@ -26,6 +27,9 @@ export default function RootLayout({
               <Navbar />
             </header>
             <main>{children}</main>
+            <footer>
+              <Footer />
+            </footer>
           </div>
         </body>
       </ThemeProvider>

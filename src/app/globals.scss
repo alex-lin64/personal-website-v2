@@ -1,9 +1,3 @@
-$bg-black: #050505;
-$text-white: white;
-
-$bg-white: #fdfdfc;
-$text-black: #0e0e0e;
-
 :root {
   --max-width: 100%;
   --border-radius: 12px;
@@ -28,8 +22,9 @@ $text-black: #0e0e0e;
   --error: #ee2c4a;
   --success: #44cc77;
 
+  --highlight-bl: rgba(38, 115, 221, 0.2);
   --highlight-bk: rgba(255, 122, 69, 0.87);
-  --highlight-ck: rgba(250, 219, 20, 0.87);
+  --highlight-ck: rgba(230, 201, 17, 0.87);
   --highlight-sk: rgba(255, 94, 210, 0.87);
 
   background-color: var(--bg);
@@ -53,6 +48,9 @@ $text-black: #0e0e0e;
     --error: #ab2b30;
     --success: #309d53;
 
+    --highlight-bl: rgba(28, 100, 202, 0.993);
+    --highlight-ck: rgba(250, 219, 20, 0.87);
+
     background-color: var(--bg);
     color: var(--text-87);
   }
@@ -75,13 +73,13 @@ a {
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   :root {
     --max-width: 60%;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   :root {
     --max-width: 39%;
   }
