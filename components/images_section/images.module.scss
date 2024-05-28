@@ -20,7 +20,7 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
   }
 
   &::before,
@@ -34,7 +34,7 @@
     transform: translateY(0px) translateX(0px);
     width: 100%;
     z-index: -1;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
   }
 
   &::after {

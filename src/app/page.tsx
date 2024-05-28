@@ -8,6 +8,7 @@ export default function Home() {
       <div className={styles.heading}>
         <p className={styles.headingText}> hey, I'm Alex 👋</p>
         <p className={styles.subheadingText}>student software engineer</p>
+        <p className={styles.subheadingText}>real estate agent</p>
       </div>
       <div className={styles.body}>
         <p className={styles.bodyText}>
@@ -26,15 +27,15 @@ export default function Home() {
             className={styles.link}
             href="https://bostonfusion.com/"
           >
-            defense contractor
+            defense-contractor
           </Link>{" "}
-          as a deep learning research programmer and at a{" "}
+          as a deep learning research programmer and at a medical tech{" "}
           <Link
             className={styles.link}
             target="_blank"
             href="https://bostonmds.com/"
           >
-            medical tech startup
+            startup
           </Link>{" "}
           as a data analyst.
         </p>
@@ -46,9 +47,10 @@ export default function Home() {
           My main focus these days is two-fold{" "}
           <span className={styles.bolded}>{"(1)"}</span> technical recruiting
           for a full time position and{" "}
-          <span className={styles.bolded}>{"(2)"}</span> developing a technical
+          <span className={styles.bolded}>{"(2)"}</span> learning to build a
           startup within the real estate realm as a complement to my experience
-          as a licensed salesperson.
+          as a licensed salesperson. I work in real estate outside of my
+          technical career.
         </p>
         <p className={styles.bodyText}>
           When I have time to spare, I love to play{" "}
