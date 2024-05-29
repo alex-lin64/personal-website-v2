@@ -8,7 +8,7 @@ interface ProjectProps {
   projImage: string;
   projectLink: string;
   description: string;
-  skills: string[];
+  builtWith: string[];
 }
 
 const ProjectUnit: React.FC<ProjectProps> = ({
@@ -16,7 +16,7 @@ const ProjectUnit: React.FC<ProjectProps> = ({
   projImage,
   projectLink,
   description,
-  skills,
+  builtWith: builtWith,
 }) => {
   return (
     <div className={styles.wrapper}>
@@ -32,10 +32,10 @@ const ProjectUnit: React.FC<ProjectProps> = ({
               {title} <span className={styles.linkSymbol}> 🔗</span>
             </div>
             <div className={styles.description}>{description}</div>
-            <div className={styles.skills}>
-              {skills.map((skill, index) => (
-                <span key={index} className={styles.skill}>
-                  {skill}
+            <div className={styles.builtWiths}>
+              {builtWith.map((builtWith, index) => (
+                <span key={index} className={styles.builtWith}>
+                  {builtWith}
                 </span>
               ))}
             </div>

@@ -1,0 +1,81 @@
+.tableWrapper {
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    justify-content: center;
+    display: flex;
+  }
+
+  .tableContainer {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2.5rem;
+
+    .tableCells {
+      padding: 0.75rem; // Adjust padding for better spacing
+      border: 1px solid var(--primary);
+      border-left: none;
+      border-right: none;
+      text-align: left;
+
+      .link {
+        font-weight: 550;
+        text-decoration: none; // Removes underline from links
+        display: inline-block;
+        position: relative;
+
+        transition: color 0.2s ease, text-decoration-color 0.2s ease,
+          text-underline-offset 0.2s ease;
+
+        &:hover {
+          color: var(--primary);
+          text-decoration: underline;
+          text-underline-offset: 0.23rem;
+          text-decoration-color: var(--highlight-bl);
+        }
+      }
+
+      .builtWiths {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+
+        .builtWith {
+          margin-right: 0.5rem;
+          margin-bottom: 0.5rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 1rem;
+          padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+          background-color: var(--highlight-bl);
+          font-weight: 500;
+          font-size: 0.85rem;
+        }
+      }
+    }
+
+    td:first-child,
+    td:nth-child(3) {
+      opacity: 0.6;
+    }
+
+    td:nth-child(2) {
+      font-weight: 500;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  // eliminate everything except year, keep project title and make it a link
+}
+
+@media (min-width: 1024px) {
+  // eliminate everything except year, title and link
+}

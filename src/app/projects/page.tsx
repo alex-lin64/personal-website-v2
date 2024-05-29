@@ -9,14 +9,14 @@ export default function ProjectPage() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        {projectData.map((proj, index) => (
+        {projectData.slice(0, 4).map((proj, index) => (
           <div key={index} className={styles.units}>
             <ProjectUnit
               title={proj.title}
               projImage={proj.projImage}
               projectLink={proj.projectLink}
               description={proj.description}
-              skills={proj.skills}
+              builtWith={proj.builtWith}
             />
           </div>
         ))}
