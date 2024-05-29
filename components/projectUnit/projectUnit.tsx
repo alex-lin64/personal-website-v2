@@ -1,41 +1,34 @@
 import React from "react";
 
-import styles from "./workUnit.module.scss";
+import styles from "./projectUnit.module.scss";
 import Link from "next/link";
 
-interface WorkProps {
-  startDate: string;
-  endDate: string;
+interface ProjectProps {
   title: string;
-  company: string;
-  companyLink: string;
+  projImage: string;
+  projectLink: string;
   description: string;
   skills: string[];
 }
 
-const WorkUnit: React.FC<WorkProps> = ({
-  startDate,
-  endDate,
+const ProjectUnit: React.FC<ProjectProps> = ({
   title,
-  company,
-  companyLink,
+  projImage,
+  projectLink,
   description,
   skills,
 }) => {
   return (
     <div className={styles.wrapper}>
-      <Link href={companyLink} target="_blank" className={styles.link}>
+      <Link href={projectLink} target="_blank" className={styles.link}>
         <div className={styles.container}>
-          <div className={styles.date}>
-            <div className={styles.dateText}>
-              {startDate} — {endDate}
-            </div>
+          <div className={styles.projImage}>
+            <img src={projImage} alt={projImage} />
           </div>
           <div className={styles.body}>
             <div className={styles.title}>
               {title}
-              {" • "}
-              {company} <span className={styles.linkSymbol}>🔗</span>
+              <span className={styles.linkSymbol}>🔗</span>
             </div>
             <div className={styles.description}>{description}</div>
             <div className={styles.skills}>
@@ -52,4 +45,4 @@ const WorkUnit: React.FC<WorkProps> = ({
   );
 };
 
-export default WorkUnit;
+export default ProjectUnit;

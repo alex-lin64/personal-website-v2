@@ -1,10 +1,8 @@
-const workData = [
+const projectData = [
   {
-    startDate: "June",
-    endDate: "Present",
-    title: "Software Engineer Intern",
-    company: "BlackRock",
-    companyLink: "https://www.blackrock.com/us/individual",
+    title: "Squatty",
+    projImage: "./assets/Squatty_screenshot.jpg",
+    projectLink: "https://github.com/alex-lin64/Squatty",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     skills: [
@@ -18,11 +16,9 @@ const workData = [
     ],
   },
   {
-    startDate: "June",
-    endDate: "Present",
-    title: "Software Engineer Intern",
-    company: "BlackRock",
-    companyLink: "https://www.blackrock.com/us/individual",
+    title: "Squatty",
+    projImage: "./assets/Squatty_screenshot.jpg",
+    projectLink: "https://github.com/alex-lin64/Squatty",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     skills: [
@@ -37,4 +33,4 @@ const workData = [
   },
 ];
 
-export default workData;
+export default projectData;

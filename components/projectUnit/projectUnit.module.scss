@@ -17,17 +17,14 @@
       flex-direction: row;
       margin: 1.2rem;
 
-      .date {
+      .projImage {
         width: 30%;
         display: flex;
         justify-content: left;
         padding-top: 0.06rem;
         margin-right: 2rem;
 
-        .dateText {
-          font-size: 0.95rem;
-          font-weight: 500;
-          opacity: 70%;
+        img {
         }
       }
 
@@ -79,13 +76,12 @@
       .container {
         flex-direction: column;
 
-        .date {
+        .projImage {
           width: 100%;
           margin: 0;
           margin-bottom: 0.35rem;
 
-          .dateText {
-            font-size: 0.85rem;
+          img {
           }
         }
 
