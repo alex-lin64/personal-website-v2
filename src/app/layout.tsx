@@ -5,6 +5,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import styles from "./layout.module.scss";
 import "./globals.scss";
+import { usePathname } from "next/navigation";
 
 import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";

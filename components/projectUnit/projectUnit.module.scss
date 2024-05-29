@@ -21,10 +21,19 @@
         width: 30%;
         display: flex;
         justify-content: left;
-        padding-top: 0.06rem;
         margin-right: 2rem;
+        padding-top: 0.3rem;
 
-        img {
+        .imgContainer {
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: auto; // Maintain aspect ratio
+            display: block;
+            border: 0.2rem solid var(--border);
+            border-radius: 0.4rem;
+          }
         }
       }
 

@@ -23,12 +23,13 @@ const ProjectUnit: React.FC<ProjectProps> = ({
       <Link href={projectLink} target="_blank" className={styles.link}>
         <div className={styles.container}>
           <div className={styles.projImage}>
-            <img src={projImage} alt={projImage} />
+            <div className={styles.imgContainer}>
+              <img src={projImage} alt={projImage} />
+            </div>
           </div>
           <div className={styles.body}>
             <div className={styles.title}>
-              {title}
-              <span className={styles.linkSymbol}>🔗</span>
+              {title} <span className={styles.linkSymbol}> 🔗</span>
             </div>
             <div className={styles.description}>{description}</div>
             <div className={styles.skills}>

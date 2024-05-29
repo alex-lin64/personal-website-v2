@@ -21,17 +21,13 @@ export default function ProjectPage() {
           </div>
         ))}
       </div>
-      {/* <div className={styles.closer}>
-        <Link
-          href="./alex_lin_resume.pdf"
-          className={styles.link}
-          target="_blank"
-        >
+      <div className={styles.closer}>
+        <Link href="/archive" className={styles.link}>
           <span className={styles.closerText}>
-            view full resume <span className={styles.linkSymbol}>🔗</span>
+            view project archive <span className={styles.linkSymbol}>🔗</span>
           </span>
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 }

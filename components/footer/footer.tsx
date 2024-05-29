@@ -1,4 +1,8 @@
+"use client";
+
 import React from "react";
+import { usePathname } from "next/navigation";
+
 import styles from "./footer.module.scss";
 
 import { FaGithub } from "react-icons/fa";
@@ -8,47 +12,55 @@ import { FaGoodreads } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Footer() {
+  const pathname = usePathname();
+
   return (
-    <div className={styles.wrapper}>
-      <ul className={styles.list}>
-        <li className={styles.listItem}>
-          <Link
-            target="_blank"
-            href="https://github.com/alex-lin64"
-            className={styles.link}
-          >
-            <FaGithub />
-          </Link>
-        </li>
-        <li className={styles.listItem}>
-          <Link
-            target="_blank"
-            href="https://www.linkedin.com/in/alexlin64/"
-            className={styles.link}
-          >
-            <FaLinkedin />
-          </Link>
-        </li>
-        <li className={styles.listItem}>
-          <Link
-            target="_blank"
-            href="mailto:alex_lin@brown.edu"
-            className={styles.link}
-          >
-            <MdEmail />
-          </Link>
-        </li>
-        <li className={styles.listItem}>
-          <Link
-            target="_blank"
-            href="https://www.goodreads.com/user/show/178637021-alex-lin"
-            className={styles.link}
-          >
-            <FaGoodreads />
-          </Link>
-        </li>
-      </ul>
-      <span className={styles.line}></span>
+    <div className={styles.conditional}>
+      {pathname === "/archive" ? (
+        <div></div>
+      ) : (
+        <div className={styles.wrapper}>
+          <ul className={styles.list}>
+            <li className={styles.listItem}>
+              <Link
+                target="_blank"
+                href="https://github.com/alex-lin64"
+                className={styles.link}
+              >
+                <FaGithub />
+              </Link>
+            </li>
+            <li className={styles.listItem}>
+              <Link
+                target="_blank"
+                href="https://www.linkedin.com/in/alexlin64/"
+                className={styles.link}
+              >
+                <FaLinkedin />
+              </Link>
+            </li>
+            <li className={styles.listItem}>
+              <Link
+                target="_blank"
+                href="mailto:alex_lin@brown.edu"
+                className={styles.link}
+              >
+                <MdEmail />
+              </Link>
+            </li>
+            <li className={styles.listItem}>
+              <Link
+                target="_blank"
+                href="https://www.goodreads.com/user/show/178637021-alex-lin"
+                className={styles.link}
+              >
+                <FaGoodreads />
+              </Link>
+            </li>
+          </ul>
+          <span className={styles.line}></span>
+        </div>
+      )}
     </div>
   );
 }
