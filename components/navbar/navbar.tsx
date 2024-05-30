@@ -10,14 +10,63 @@ import { TbMoonStars } from "react-icons/tb";
 import { FaArrowLeftLong } from "react-icons/fa6";
 
 import { useTheme } from "../../context/themeContext";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseOutline } from "react-icons/io5";
 
 function Navbar() {
   const pathname = usePathname();
 
   const { isDarkMode, toggleTheme } = useTheme();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setMenuOpen(!menuOpen);
+    document.documentElement.classList.toggle("scroll");
+  };
 
   return (
     <div className={styles.conditional}>
+      <div className={styles.hamburger} onClick={handleMenuToggle}>
+        {!menuOpen && <RxHamburgerMenu />}
+      </div>
+      {menuOpen && (
+        <div className={styles.fullscreenMenu}>
+          <div className={styles.closeButton} onClick={handleMenuToggle}>
+            <IoCloseOutline />
+          </div>
+          <ul className={styles.fullscreenUl}>
+            <li className={styles.fullscreenLi}>
+              <Link href="/" onClick={handleMenuToggle}>
+                home
+              </Link>
+            </li>
+            <li className={styles.fullscreenLi}>
+              <Link href="/work" onClick={handleMenuToggle}>
+                work
+              </Link>
+            </li>
+            <li className={styles.fullscreenLi}>
+              <Link href="/projects" onClick={handleMenuToggle}>
+                projects
+              </Link>
+            </li>
+            <li className={styles.fullscreenLi}>
+              <Link href="/archive" onClick={handleMenuToggle}>
+                archive
+              </Link>
+            </li>
+            <li className={styles.fullscreenLi}>
+              <div
+                onClick={() => {
+                  toggleTheme();
+                }}
+              >
+                {isDarkMode ? <TbMoonStars /> : <MdWbSunny />}
+              </div>
+            </li>
+          </ul>
+        </div>
+      )}
       {pathname === "/archive" ? (
         <nav className={styles.nav}>
           <ul className={styles.ul}>
@@ -68,16 +117,6 @@ function Navbar() {
                 projects
               </Link>
             </li>
-            {/* <li className={styles.li}>
-              <Link
-                href="/blog"
-                className={`${styles.a} ${
-                  pathname === "/blog" ? styles.active : ""
-                }`}
-              >
-                blog
-              </Link>
-            </li> */}
             <li className={styles.li}>
               <div onClick={toggleTheme} className={styles.theme}>
                 {isDarkMode ? <TbMoonStars /> : <MdWbSunny />}

@@ -59,3 +59,12 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  // remove archive link
+  .wrapper {
+    .closer {
+      display: none;
+    }
+  }
+}
