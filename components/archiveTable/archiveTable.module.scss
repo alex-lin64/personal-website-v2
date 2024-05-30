@@ -72,10 +72,25 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
   // eliminate everything except year, keep project title and make it a link
+  .tableWrapper {
+    .tableContainer {
+      .tableCells:nth-child(n + 3) {
+        display: none; // Hide cells from the 3rd column onwards
+      }
+    }
+  }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1350px) {
   // eliminate everything except year, title and link
+  .tableWrapper {
+    .tableContainer {
+      .tableCells:nth-child(3),
+      .tableCells:nth-child(4) {
+        display: none; // Hide cells from the 3rd column onwards
+      }
+    }
+  }
 }

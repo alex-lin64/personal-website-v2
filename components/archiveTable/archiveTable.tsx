@@ -24,7 +24,15 @@ export default function ArchiveTable() {
           {projectData.map((proj, index) => (
             <tr key={index}>
               <td className={styles.tableCells}>{proj.year}</td>
-              <td className={styles.tableCells}>{proj.title}</td>
+              <td className={styles.tableCells}>
+                <Link
+                  href={proj.projectLink}
+                  className={styles.link}
+                  target="_blank"
+                >
+                  {proj.title}
+                </Link>
+              </td>
               <td className={styles.tableCells}>{proj.madeAt}</td>
               <td className={styles.tableCells}>
                 <div className={styles.builtWiths}>
