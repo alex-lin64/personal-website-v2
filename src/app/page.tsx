@@ -54,12 +54,33 @@ export default function Home() {
           as a licensed salesperson. I work in real estate outside of my
           technical career.
         </p>
-        <p className={styles.bodyText}>
+        <div className={styles.bodyText}>
           When I have time to spare, I love to play{" "}
-          <span className={styles.link}>tennis</span>,{" "}
-          <span className={styles.link}>cook</span> fancy meals, and learn new{" "}
-          <span className={styles.link}>languages</span>.
-        </p>
+          <Link
+            className={styles.link}
+            target="_blank"
+            href="https://www.youtube.com/watch?v=pMJ0-1GGf5k&ab_channel=penabaza"
+          >
+            <div className={styles.tennis}>tennis</div>
+          </Link>
+          ,{" "}
+          <Link
+            className={styles.link}
+            target="_blank"
+            href="https://www.maangchi.com/"
+          >
+            <div className={styles.cook}>cook</div>
+          </Link>{" "}
+          fancy meals, and{" "}
+          <Link
+            className={styles.link}
+            target="_blank"
+            href="https://www.youtube.com/watch?v=6OIsdQXNC24&ab_channel=GogginsMindset-FANACCOUNT"
+          >
+            <div className={styles.languages}>workout</div>
+          </Link>
+          .
+        </div>
       </div>
     </div>
   );

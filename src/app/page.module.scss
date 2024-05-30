@@ -33,6 +33,7 @@
       text-decoration: none; // Removes underline from links
       display: inline-block;
       position: relative;
+      cursor: none;
 
       transition: color 0.2s ease, text-decoration-color 0.2s ease,
         text-underline-offset 0.2s ease;
