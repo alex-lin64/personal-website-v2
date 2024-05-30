@@ -1,17 +1,39 @@
 "use client";
 
-import React from "react";
-import { usePathname } from "next/navigation";
-
-import styles from "./footer.module.scss";
-
+import React, { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaGoodreads } from "react-icons/fa";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+import styles from "./footer.module.scss";
+
+import axios from "axios";
 
 export default function Footer() {
+  const [lastUpdated, setLastUpdated] = useState("");
+
+  useEffect(() => {
+    // Function to fetch repository information from GitHub API
+    const fetchRepositoryInfo = async () => {
+      try {
+        const response = await axios.get(
+          "https://api.github.com/repos/username/reponame"
+        );
+        // Extract last updated timestamp
+        const updatedTimestamp = response.data.updated_at;
+        setLastUpdated(updatedTimestamp);
+      } catch (error) {
+        console.error("Error fetching repository information:", error);
+      }
+    };
+
+    fetchRepositoryInfo();
+  }, []);
+
   const pathname = usePathname();
 
   return (
