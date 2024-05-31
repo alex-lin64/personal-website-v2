@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={GeistSans.className}>
+      <body className={GeistSans.className} suppressHydrationWarning={true}>
         <ThemeProvider>
           <NextTopLoader
             showSpinner={false}

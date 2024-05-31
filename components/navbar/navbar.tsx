@@ -62,7 +62,7 @@ function Navbar() {
                 }}
               >
                 {theme === undefined ? (
-                  "light"
+                  <MdWbSunny />
                 ) : theme === "light" ? (
                   <MdWbSunny />
                 ) : (
@@ -89,7 +89,7 @@ function Navbar() {
                 className={styles.theme}
               >
                 {theme === undefined ? (
-                  "light"
+                  <MdWbSunny />
                 ) : theme === "light" ? (
                   <MdWbSunny />
                 ) : (
@@ -138,7 +138,7 @@ function Navbar() {
                 className={styles.theme}
               >
                 {theme === undefined ? (
-                  "light"
+                  <MdWbSunny />
                 ) : theme === "light" ? (
                   <MdWbSunny />
                 ) : (
