@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "./projectUnit.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 
 interface ProjectProps {
   title: string;
@@ -24,7 +25,12 @@ const ProjectUnit: React.FC<ProjectProps> = ({
         <div className={styles.container}>
           <div className={styles.projImage}>
             <div className={styles.imgContainer}>
-              <img src={projImage} alt={projImage} />
+              <Image
+                src={projImage}
+                alt={projImage}
+                width={1080}
+                height={1920}
+              />
             </div>
           </div>
           <div className={styles.body}>

@@ -2,6 +2,7 @@
   overflow-x: auto;
   display: flex;
   flex-direction: column;
+  margin-bottom: 7rem;
 
   .title {
     font-size: 1.5rem;
@@ -29,6 +30,7 @@
         text-decoration: none; // Removes underline from links
         display: inline-block;
         position: relative;
+        cursor: none;
 
         transition: color 0.2s ease, text-decoration-color 0.2s ease,
           text-underline-offset 0.2s ease;

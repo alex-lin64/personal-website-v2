@@ -45,7 +45,7 @@ export default function Home() {
           as a data analyst.
         </div>
         <div className={styles.headshot}>
-          <ImageModule imagePath="./assets/profile_pic_fun.jpg" />
+          <ImageModule imagePath="/assets/profile_pic_fun.jpg" />
         </div>
 
         <div className={styles.bodyText}>

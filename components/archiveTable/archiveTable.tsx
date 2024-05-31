@@ -5,6 +5,8 @@ import projectData from "../../public/assets/projects";
 import Link from "next/link";
 
 export default function ArchiveTable() {
+  projectData.sort((a, b) => b.year - a.year);
+
   return (
     <div className={styles.tableWrapper}>
       <div className={styles.title}>
