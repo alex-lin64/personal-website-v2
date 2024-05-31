@@ -47,31 +47,31 @@
 
   background-color: var(--bg);
   color: var(--text-87);
+}
 
-  &.dark {
-    // define dark color palette
-    --text-87: rgba(255, 255, 255, 87);
-    --text-60: rgba(255, 255, 255, 60);
-    --text-38: rgba(255, 255, 255, 38);
+[data-theme="dark"] {
+  // define dark color palette
+  --text-87: rgba(255, 255, 255, 87);
+  --text-60: rgba(255, 255, 255, 60);
+  --text-38: rgba(255, 255, 255, 38);
 
-    --bg: #121212;
-    --panel: #222222;
-    --border: rgba(255, 255, 255, 0.09);
+  --bg: #121212;
+  --panel: #222222;
+  --border: rgba(255, 255, 255, 0.09);
 
-    --primary: rgba(250, 219, 20, 0.87);
-    --primary-20: rgba(250, 219, 20, 0.3);
-    --primary-5: rgba(250, 219, 20, 0.14);
+  --primary: rgba(250, 219, 20, 0.87);
+  --primary-20: rgba(250, 219, 20, 0.3);
+  --primary-5: rgba(250, 219, 20, 0.14);
 
-    --warning: #b2b400;
-    --error: #ab2b30;
-    --success: #309d53;
+  --warning: #b2b400;
+  --error: #ab2b30;
+  --success: #309d53;
 
-    --highlight-bl: rgba(173, 154, 28, 0.87);
-    --highlight-ck: rgba(250, 219, 20, 0.87);
+  --highlight-bl: rgba(173, 154, 28, 0.87);
+  --highlight-ck: rgba(250, 219, 20, 0.87);
 
-    background-color: var(--bg);
-    color: var(--text-87);
-  }
+  background-color: var(--bg);
+  color: var(--text-87);
 }
 
 * {

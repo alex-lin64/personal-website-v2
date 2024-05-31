@@ -4,19 +4,19 @@ import Link from "next/link";
 import React, { useState } from "react";
 import styles from "./navbar.module.scss";
 import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
 
 import { MdWbSunny } from "react-icons/md";
 import { TbMoonStars } from "react-icons/tb";
 import { FaArrowLeftLong } from "react-icons/fa6";
 
-import { useTheme } from "../../context/themeContext";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 
 function Navbar() {
   const pathname = usePathname();
 
-  const { isDarkMode, toggleTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -58,10 +58,10 @@ function Navbar() {
             <li className={styles.fullscreenLi}>
               <div
                 onClick={() => {
-                  toggleTheme();
+                  setTheme(theme === "light" ? "dark" : "light");
                 }}
               >
-                {isDarkMode ? <TbMoonStars /> : <MdWbSunny />}
+                {theme === "light" ? <MdWbSunny /> : <TbMoonStars />}
               </div>
             </li>
           </ul>
@@ -78,8 +78,11 @@ function Navbar() {
               </div>
             </li>
             <li className={styles.li}>
-              <div onClick={toggleTheme} className={styles.theme}>
-                {isDarkMode ? <TbMoonStars /> : <MdWbSunny />}
+              <div
+                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                className={styles.theme}
+              >
+                {theme === "light" ? <MdWbSunny /> : <TbMoonStars />}
               </div>
             </li>
           </ul>
@@ -118,8 +121,11 @@ function Navbar() {
               </Link>
             </li>
             <li className={styles.li}>
-              <div onClick={toggleTheme} className={styles.theme}>
-                {isDarkMode ? <TbMoonStars /> : <MdWbSunny />}
+              <div
+                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                className={styles.theme}
+              >
+                {theme === "light" ? <MdWbSunny /> : <TbMoonStars />}
               </div>
             </li>
           </ul>

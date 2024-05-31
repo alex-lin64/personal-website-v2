@@ -69,7 +69,7 @@ const projectData = [
     builtWith: ["Javascript", "Node.js", "AWS", "EC2", "Bash"],
   },
   {
-    title: "Virtual Network",
+    title: "Virtual TP/TCP",
     projImage: "/assets/iptcp.png",
     projectLink: "https://github.com/brown-cs1680-f23/iptcp-alex-min",
     shortLink: "Contact for demo",

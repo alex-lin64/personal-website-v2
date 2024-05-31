@@ -8,7 +8,8 @@ import "./globals.scss";
 
 import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
-import { ThemeProvider } from "../../context/themeContext";
+import { ThemeProvider } from "next-themes";
+
 import NextTopLoader from "nextjs-toploader";
 
 import { Analytics } from "@vercel/analytics/react";
@@ -25,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <ThemeProvider>
         <body className={GeistSans.className}>
           <NextTopLoader

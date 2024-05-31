@@ -15,6 +15,7 @@ const ImageModule: React.FC<ImageProps> = ({ imagePath }) => {
           alt="Fun picture of Alex"
           width={1080}
           height={1920}
+          priority={true}
         />
       </div>
     </div>
