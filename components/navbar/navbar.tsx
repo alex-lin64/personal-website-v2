@@ -61,7 +61,13 @@ function Navbar() {
                   setTheme(theme === "light" ? "dark" : "light");
                 }}
               >
-                {theme === "light" ? <MdWbSunny /> : <TbMoonStars />}
+                {theme === undefined ? (
+                  "light"
+                ) : theme === "light" ? (
+                  <MdWbSunny />
+                ) : (
+                  <TbMoonStars />
+                )}
               </div>
             </li>
           </ul>
@@ -82,7 +88,13 @@ function Navbar() {
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                 className={styles.theme}
               >
-                {theme === "light" ? <MdWbSunny /> : <TbMoonStars />}
+                {theme === undefined ? (
+                  "light"
+                ) : theme === "light" ? (
+                  <MdWbSunny />
+                ) : (
+                  <TbMoonStars />
+                )}
               </div>
             </li>
           </ul>
@@ -125,7 +137,13 @@ function Navbar() {
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                 className={styles.theme}
               >
-                {theme === "light" ? <MdWbSunny /> : <TbMoonStars />}
+                {theme === undefined ? (
+                  "light"
+                ) : theme === "light" ? (
+                  <MdWbSunny />
+                ) : (
+                  <TbMoonStars />
+                )}
               </div>
             </li>
           </ul>
