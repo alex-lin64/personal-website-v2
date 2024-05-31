@@ -61,7 +61,7 @@ function Navbar() {
                   setTheme(theme === "light" ? "dark" : "light");
                 }}
               >
-                {theme === undefined ? (
+                {theme == undefined || null ? (
                   <MdWbSunny />
                 ) : theme === "light" ? (
                   <MdWbSunny />
@@ -88,7 +88,7 @@ function Navbar() {
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                 className={styles.theme}
               >
-                {theme === undefined ? (
+                {theme == undefined || null ? (
                   <MdWbSunny />
                 ) : theme === "light" ? (
                   <MdWbSunny />
@@ -137,7 +137,7 @@ function Navbar() {
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                 className={styles.theme}
               >
-                {theme === undefined ? (
+                {theme == undefined || null ? (
                   <MdWbSunny />
                 ) : theme === "light" ? (
                   <MdWbSunny />
