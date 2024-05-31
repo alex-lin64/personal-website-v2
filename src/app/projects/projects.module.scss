@@ -10,7 +10,7 @@
       border-radius: 1rem;
       margin-bottom: 2rem;
       transition: background-color 0.3s ease, opacity 0.3s ease;
-      border-top: 2px solid var(--bg);
+      border-top: 2px solid transparent;
 
       &:hover {
         background-color: var(--panel);
