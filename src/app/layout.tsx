@@ -25,9 +25,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <ThemeProvider>
-        <body className={GeistSans.className}>
+    <html lang="en" suppressHydrationWarning={true}>
+      <body className={GeistSans.className}>
+        <ThemeProvider>
           <NextTopLoader
             showSpinner={false}
             color="var(--primary)"
@@ -44,8 +44,8 @@ export default function RootLayout({
           </div>
           <Analytics />
           <SpeedInsights />
-        </body>
-      </ThemeProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
