@@ -80,6 +80,23 @@ const projectData = [
     builtWith: ["Go", "Wireshark"],
   },
   {
+    title: "Personal Site v1",
+    projImage: "/assets/personal-sitev1.png",
+    projectLink: "https://alexlinv1.vercel.app/",
+    shortLink: "Site",
+    year: 2023,
+    madeAt: "",
+    description: "My personal website, the 1st iteration.",
+    builtWith: [
+      "React",
+      "Next.js",
+      "Tailwind",
+      "Vercel",
+      "Typescript",
+      "Framermotion",
+    ],
+  },
+  {
     title: "Alien Invasion",
     projImage: "/assets/alien-invasion.png",
     projectLink: "https://github.com/alex-lin64/alienInvasion",
