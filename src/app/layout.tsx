@@ -11,6 +11,9 @@ import Footer from "../../components/footer/footer";
 import { ThemeProvider } from "../../context/themeContext";
 import NextTopLoader from "nextjs-toploader";
 
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 export const metadata: Metadata = {
   title: "Alex Lin",
   description: "Alex Lin's Site v2",
@@ -39,6 +42,8 @@ export default function RootLayout({
               <Footer />
             </footer>
           </div>
+          <Analytics />
+          <SpeedInsights />
         </body>
       </ThemeProvider>
     </html>

@@ -8,12 +8,15 @@ export default function Home() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.heading}>
-        <p className={styles.headingText}> hey, I'm Alex 👋</p>
+        <p className={styles.headingText}>
+          {" "}
+          hey, I'm Alex <span className={styles.wave}>👋</span>
+        </p>
         <p className={styles.subheadingText}>student software engineer</p>
         <p className={styles.subheadingText}>real estate agent</p>
       </div>
       <div className={styles.body}>
-        <p className={styles.bodyText}>
+        <div className={styles.bodyText}>
           I am a junior pursuing a degree in Computer Science at Brown
           University. This summer, I will be joining{" "}
           <Link
@@ -40,12 +43,12 @@ export default function Home() {
             startup
           </Link>{" "}
           as a data analyst.
-        </p>
+        </div>
         <div className={styles.headshot}>
           <ImageModule imagePath="./assets/profile_pic_fun.jpg" />
         </div>
 
-        <p className={styles.bodyText}>
+        <div className={styles.bodyText}>
           My main focus these days is two-fold{" "}
           <span className={styles.bolded}>{"(1)"}</span> technical recruiting
           for a full time position and{" "}
@@ -53,7 +56,7 @@ export default function Home() {
           startup within the real estate realm as a complement to my experience
           as a licensed salesperson. I work in real estate outside of my
           technical career.
-        </p>
+        </div>
         <div className={styles.bodyText}>
           When I have time to spare, I love to play{" "}
           <Link
@@ -80,6 +83,17 @@ export default function Home() {
             <div className={styles.languages}>workout</div>
           </Link>
           .
+        </div>
+        <div className={styles.bodyText}>
+          Shoot me an email at{" "}
+          <Link
+            className={styles.link}
+            target="_blank"
+            href="mailto:alex_lin@brown.edu"
+          >
+            alex_lin@brown.edu
+          </Link>{" "}
+          😉
         </div>
       </div>
     </div>

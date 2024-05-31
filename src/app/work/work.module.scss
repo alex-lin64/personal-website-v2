@@ -2,6 +2,15 @@
   display: flex;
   flex-direction: column;
 
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 650;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
   .container {
     display: flex;
     flex-direction: column;

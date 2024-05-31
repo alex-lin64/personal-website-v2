@@ -8,6 +8,7 @@ import Link from "next/link";
 export default function ProjectPage() {
   return (
     <div className={styles.wrapper}>
+      <div className={styles.heading}>projects</div>
       <div className={styles.container}>
         {projectData.slice(0, 4).map((proj, index) => (
           <div key={index} className={styles.units}>

@@ -8,6 +8,7 @@ import Link from "next/link";
 export default function WorkPage() {
   return (
     <div className={styles.wrapper}>
+      <div className={styles.heading}>work</div>
       <div className={styles.container}>
         {workData.map((work, index) => (
           <div key={index} className={styles.units}>
