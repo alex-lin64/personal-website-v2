@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./navbar.module.scss";
 import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
@@ -9,13 +9,13 @@ import { useTheme } from "next-themes";
 import { MdWbSunny } from "react-icons/md";
 import { TbMoonStars } from "react-icons/tb";
 import { FaArrowLeftLong } from "react-icons/fa6";
-
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 
 function Navbar() {
   const pathname = usePathname();
-
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -23,6 +23,15 @@ function Navbar() {
     setMenuOpen(!menuOpen);
     document.documentElement.classList.toggle("scroll");
   };
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // if (!mounted) {
+  //   return <div></div>;
+  // }
 
   return (
     <div className={styles.conditional}>
@@ -61,9 +70,11 @@ function Navbar() {
                   setTheme(theme === "light" ? "dark" : "light");
                 }}
               >
-                {theme == undefined || null ? (
-                  <MdWbSunny />
-                ) : theme === "light" ? (
+                {!mounted ? (
+                  <span className={styles.unmounted} onClick={() => null}>
+                    <AiOutlineLoading3Quarters />
+                  </span>
+                ) : theme === "light" || undefined || null ? (
                   <MdWbSunny />
                 ) : (
                   <TbMoonStars />
@@ -88,9 +99,11 @@ function Navbar() {
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                 className={styles.theme}
               >
-                {theme == undefined || null ? (
-                  <MdWbSunny />
-                ) : theme === "light" ? (
+                {!mounted ? (
+                  <span className={styles.unmounted} onClick={() => null}>
+                    <AiOutlineLoading3Quarters />
+                  </span>
+                ) : theme === "light" || undefined || null ? (
                   <MdWbSunny />
                 ) : (
                   <TbMoonStars />
@@ -137,9 +150,11 @@ function Navbar() {
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                 className={styles.theme}
               >
-                {theme == undefined || null ? (
-                  <MdWbSunny />
-                ) : theme === "light" ? (
+                {!mounted ? (
+                  <span className={styles.unmounted} onClick={() => null}>
+                    <AiOutlineLoading3Quarters />
+                  </span>
+                ) : theme === "light" || undefined || null ? (
                   <MdWbSunny />
                 ) : (
                   <TbMoonStars />
