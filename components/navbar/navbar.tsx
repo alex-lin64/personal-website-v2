@@ -29,10 +29,6 @@ function Navbar() {
     setMounted(true);
   }, []);
 
-  // if (!mounted) {
-  //   return <div></div>;
-  // }
-
   return (
     <div className={styles.conditional}>
       <div className={styles.hamburger} onClick={handleMenuToggle}>
