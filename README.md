@@ -57,7 +57,7 @@
 
 ## About The Project
 
-Hi! Welcome to my personal portfolio. This is where I host all of my information, including latest projects, activity, as well as ways to get in contact with we.
+Welcome to my personal portfolio. This is where I host all of my information, including latest projects, activity, as well as ways to get in contact with we.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
