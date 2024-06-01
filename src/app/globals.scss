@@ -82,7 +82,7 @@
 
 html,
 body {
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -92,7 +92,7 @@ body::after {
   position: absolute;
   z-index: -1;
   opacity: 0.65;
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -111,12 +111,12 @@ body::before {
 body::after {
   background: var(--secondary-glow);
   border-radius: 50%;
-  width: 500px;
-  height: 700px;
+  width: 30vw;
+  height: 20vw;
   filter: blur(90px);
   top: calc(50vh - 50vw / 2);
   left: calc(50vw - 50vw / 2);
-  animation: animateAfter 30s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  animation: animateAfter 20s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
 }
 
 @keyframes animateBefore {
@@ -175,7 +175,6 @@ a {
 @media (min-width: 650px) {
   :root {
     --max-width: 60%;
-
     overflow-x: hidden;
   }
 }
