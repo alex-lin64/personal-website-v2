@@ -34,7 +34,7 @@ export default function Home() {
           >
             defense-contractor
           </Link>{" "}
-          as a deep learning research programmer and at a medical tech{" "}
+          as a machine learning engineer and a medical tech startup{" "}
           <Link
             className={styles.link}
             target="_blank"
@@ -42,7 +42,7 @@ export default function Home() {
           >
             startup
           </Link>{" "}
-          as a data analyst.
+          as a backend engineer.
         </div>
         <div className={styles.headshot}>
           <ImageModule imagePath="/assets/profile_pic_fun.jpg" />
@@ -54,8 +54,7 @@ export default function Home() {
           for a full time position and{" "}
           <span className={styles.bolded}>{"(2)"}</span> learning to build a
           startup within the real estate realm as a complement to my experience
-          as a licensed salesperson. I work in real estate outside of my
-          technical career.
+          as a licensed salesperson.
         </div>
         <div className={styles.bodyText}>
           When I have time to spare, I love to play{" "}
