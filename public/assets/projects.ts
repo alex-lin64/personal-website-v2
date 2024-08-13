@@ -57,6 +57,17 @@ const projectData = [
     ],
   },
   {
+    title: "CS1420 Course Website",
+    projImage: "/assets/cs1420-site.png",
+    projectLink: "https://cs1420.vercel.app/",
+    shortLink: "Website",
+    year: 2024,
+    madeAt: "Brown University",
+    description:
+      "Course website created for Machine Learning at Brown University",
+    builtWith: ["Javascript", "Node.js", "Next.js", "Vercel", "React"],
+  },
+  {
     title: "Efficient Vision Model Analysis Pipeline",
     projImage: "/assets/evmap.png",
     projectLink:
@@ -83,7 +94,7 @@ const projectData = [
     title: "Personal Site v1",
     projImage: "/assets/personal-sitev1.png",
     projectLink: "https://alexlinv1.vercel.app/",
-    shortLink: "Site",
+    shortLink: "Website",
     year: 2023,
     madeAt: "",
     description: "My personal website, the 1st iteration.",
