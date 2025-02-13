@@ -1,7 +1,7 @@
 const projectData = [
   {
     title: "CS1420 Course Website (2025)",
-    projImage: "/assets/cs1420-site-s25.png",
+    projImage: "/assets/cs1420-site-s25.webp",
     projectLink: "https://stephenbach.github.io/cs142-s25-www/",
     shortLink: "Website",
     year: 2025,
@@ -12,7 +12,7 @@ const projectData = [
   },
   {
     title: "Course Clusters",
-    projImage: "/assets/course-cluster-poster.png",
+    projImage: "/assets/course-cluster-poster.webp",
     projectLink: "https://github.com/alex-lin64/Course-Clusters",
     shortLink: "GitHub",
     year: 2024,
@@ -23,7 +23,7 @@ const projectData = [
   },
   {
     title: "Squatty",
-    projImage: "/assets/Squatty_screenshot.jpg",
+    projImage: "/assets/Squatty_screenshot.webp",
     projectLink: "https://github.com/alex-lin64/Squatty",
     shortLink: "GitHub",
     year: 2023,
@@ -40,7 +40,7 @@ const projectData = [
   },
   {
     title: "Music.ly",
-    projImage: "/assets/musicly.png",
+    projImage: "/assets/musicly.webp",
     projectLink: "https://devpost.com/software/musicgenreclassification",
     shortLink: "Devpost",
     year: 2024,
@@ -51,7 +51,7 @@ const projectData = [
   },
   {
     title: "Book of Ps (i.e. Recipes)",
-    projImage: "/assets/book-of-ps.png",
+    projImage: "/assets/book-of-ps.webp",
     projectLink: "https://github.com/alex-lin64/Book-Of-Ps",
     shortLink: "GitHub",
     year: 2024,
@@ -69,7 +69,7 @@ const projectData = [
   },
   {
     title: "CS1420 Course Website (2024)",
-    projImage: "/assets/cs1420-site-s24.png",
+    projImage: "/assets/cs1420-site-s24.webp",
     projectLink: "https://cs1420-s24.vercel.app/",
     shortLink: "Website",
     year: 2024,
@@ -80,7 +80,7 @@ const projectData = [
   },
   {
     title: "Efficient Vision Model Analysis Pipeline",
-    projImage: "/assets/evmap.png",
+    projImage: "/assets/evmap.webp",
     projectLink:
       "https://github.com/alex-lin64/Efficient-Vision-Model-Analysis-Pipeline",
     shortLink: "GitHub",
@@ -92,7 +92,7 @@ const projectData = [
   },
   {
     title: "Virtual TP/TCP",
-    projImage: "/assets/iptcp.png",
+    projImage: "/assets/iptcp.webp",
     projectLink: "https://github.com/brown-cs1680-f23/iptcp-alex-min",
     shortLink: "Contact for demo",
     year: 2023,
@@ -103,7 +103,7 @@ const projectData = [
   },
   {
     title: "Personal Site v1",
-    projImage: "/assets/personal-sitev1.png",
+    projImage: "/assets/personal-sitev1.webp",
     projectLink: "https://alexlinv1.vercel.app/",
     shortLink: "Website",
     year: 2023,
@@ -120,7 +120,7 @@ const projectData = [
   },
   {
     title: "Alien Invasion",
-    projImage: "/assets/alien-invasion.png",
+    projImage: "/assets/alien-invasion.webp",
     projectLink: "https://github.com/alex-lin64/alienInvasion",
     shortLink: "GitHub",
     year: 2016,
