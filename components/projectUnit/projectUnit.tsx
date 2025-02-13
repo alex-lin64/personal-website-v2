@@ -30,7 +30,7 @@ const ProjectUnit: React.FC<ProjectProps> = ({
                 alt={projImage}
                 width={540}
                 height={960}
-                priority={true}
+                priority={false}
               />
             </div>
           </div>
