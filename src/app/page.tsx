@@ -10,15 +10,15 @@ export default function Home() {
       <div className={styles.heading}>
         <p className={styles.headingText}>
           {" "}
-          hey, I'm Alex <span className={styles.wave}>👋</span>
+          Hello, I'm Alex <span className={styles.wave}>👋</span>
         </p>
-        <p className={styles.subheadingText}>student software engineer</p>
-        <p className={styles.subheadingText}>real estate agent</p>
+        <p className={styles.subheadingText}>software engineer</p>
+        <p className={styles.subheadingText}>business man</p>
       </div>
       <div className={styles.body}>
         <div className={styles.bodyText}>
-          I am a junior pursuing a degree in Computer Science at Brown
-          University. This summer, I will be joining{" "}
+          I am a senior studying Computer Science at Brown University. This
+          summer, I will be joining{" "}
           <Link
             className={styles.link}
             target="_blank"
@@ -26,7 +26,7 @@ export default function Home() {
           >
             BlackRock
           </Link>{" "}
-          as a software engineer intern. Previously, I interned at a{" "}
+          as a full time software engineer. Previously, I interned at a{" "}
           <Link
             target="_blank"
             className={styles.link}
@@ -44,17 +44,10 @@ export default function Home() {
           </Link>{" "}
           as a backend engineer.
         </div>
-        <div className={styles.headshot}>
-          <ImageModule imagePath="/assets/profile_pic_fun.jpg" />
-        </div>
 
         <div className={styles.bodyText}>
-          My main focus these days is two-fold{" "}
-          <span className={styles.bolded}>{"(1)"}</span> technical recruiting
-          for a full time position and{" "}
-          <span className={styles.bolded}>{"(2)"}</span> learning to build a
-          startup within the real estate realm as a complement to my experience
-          as a licensed salesperson.
+          These days, I am focused on building an ecommerce company, training
+          BJJ, and enjoying life.
         </div>
         <div className={styles.bodyText}>
           When I have time to spare, I love to play{" "}
@@ -77,9 +70,9 @@ export default function Home() {
           <Link
             className={styles.link}
             target="_blank"
-            href="https://www.youtube.com/watch?v=6OIsdQXNC24&ab_channel=GogginsMindset-FANACCOUNT"
+            href="https://www.youtube.com/watch?v=slDJF2d0NTE"
           >
-            <div className={styles.languages}>workout</div>
+            <div className={styles.languages}>read about ancient history</div>
           </Link>
           .
         </div>
@@ -88,11 +81,15 @@ export default function Home() {
           <Link
             className={styles.link}
             target="_blank"
-            href="mailto:alex_lin@brown.edu"
+            href="mailto:lpecommerce2@brown.edu"
           >
-            alex_lin@brown.edu
+            lpecommerce2@gmail.com
           </Link>{" "}
-          😉
+          for business inquiries 😉
+        </div>
+
+        <div className={styles.headshot}>
+          <ImageModule imagePath="/assets/profile_pic_fun.png" />
         </div>
       </div>
     </div>

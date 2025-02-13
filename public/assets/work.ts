@@ -1,7 +1,7 @@
 const workData = [
   {
     startDate: "June",
-    endDate: "Present",
+    endDate: "August 2024",
     title: "Software Engineer Intern",
     company: "BlackRock",
     companyLink: "https://www.blackrock.com/us/individual",

@@ -1,5 +1,16 @@
 const projectData = [
   {
+    title: "CS1420 Course Website (2025)",
+    projImage: "/assets/cs1420-site-s25.png",
+    projectLink: "https://stephenbach.github.io/cs142-s25-www/",
+    shortLink: "Website",
+    year: 2025,
+    madeAt: "Brown University",
+    description:
+      "Course website v2 created for Machine Learning at Brown University",
+    builtWith: ["Javascript", "Node.js", "Next.js", "Github Pages", "React"],
+  },
+  {
     title: "Course Clusters",
     projImage: "/assets/course-cluster-poster.png",
     projectLink: "https://github.com/alex-lin64/Course-Clusters",
@@ -57,9 +68,9 @@ const projectData = [
     ],
   },
   {
-    title: "CS1420 Course Website",
-    projImage: "/assets/cs1420-site.png",
-    projectLink: "https://cs1420.vercel.app/",
+    title: "CS1420 Course Website (2024)",
+    projImage: "/assets/cs1420-site-s24.png",
+    projectLink: "https://cs1420-s24.vercel.app/",
     shortLink: "Website",
     year: 2024,
     madeAt: "Brown University",
