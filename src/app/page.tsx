@@ -17,7 +17,8 @@ export default function Home() {
       </div>
       <div className={styles.body}>
         <div className={styles.bodyText}>
-          I am a senior studying Computer Science at Brown University. This
+          I am a senior studying Computer Science at Brown University.{" "}
+          {/* This
           summer, I will be joining{" "}
           <Link
             className={styles.link}
@@ -26,7 +27,8 @@ export default function Home() {
           >
             BlackRock
           </Link>{" "}
-          as a full time software engineer. Previously, I interned at a{" "}
+          as a full time software engineer.  */}
+          Previously, I interned at a{" "}
           <Link
             target="_blank"
             className={styles.link}
