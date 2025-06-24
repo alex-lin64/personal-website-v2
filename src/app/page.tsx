@@ -17,18 +17,19 @@ export default function Home() {
       </div>
       <div className={styles.body}>
         <div className={styles.bodyText}>
-          I am a senior studying Computer Science at Brown University.{" "}
-          {/* This
-          summer, I will be joining{" "}
+          I am a software engineer at{" "}
           <Link
-            className={styles.link}
             target="_blank"
-            href="https://www.blackrock.com/us/individual/about-us/about-blackrock?cid=ppc:blk_us:cnr_us_br_core_debate_na_exact_ol:google:brand_nonprod:ol&gad_source=1&gclid=CjwKCAjwr7ayBhAPEiwA6EIGxJWx3PUnyIfnBkTPO5nv7Zw2gibnUQoc_s3XV77a62t8KvbJvloNWBoCl9kQAvD_BwE&gclsrc=aw.ds"
+            className={styles.link}
+            href="https://google.com/"
           >
-            BlackRock
+            Google.
           </Link>{" "}
-          as a full time software engineer.  */}
-          Previously, I interned at a{" "}
+        </div>
+
+        <div className={styles.bodyText}>
+          Previously, I graduated in Computer Science from Brown University and
+          I interned at a{" "}
           <Link
             target="_blank"
             className={styles.link}

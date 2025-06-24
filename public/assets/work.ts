@@ -1,5 +1,14 @@
 const workData = [
   {
+    startDate: "July",
+    endDate: "Present",
+    title: "Software Engineer",
+    company: "Google",
+    companyLink: "https://www.google.com",
+    description: "GCP",
+    skills: [],
+  },
+  {
     startDate: "June",
     endDate: "August 2024",
     title: "Software Engineer Intern",
