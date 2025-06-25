@@ -29,7 +29,15 @@ export default function Home() {
 
         <div className={styles.bodyText}>
           I graduated from Brown University in 2025 with a computer science
-          degree. While in school, I interned at a{" "}
+          degree. While in school, I interned at{" "}
+          <Link
+            target="_blank"
+            className={styles.link}
+            href="https://bostonfusion.com/"
+          >
+            Blackrock
+          </Link>{" "}
+          as a software engineer, a{" "}
           <Link
             target="_blank"
             className={styles.link}
