@@ -28,8 +28,8 @@ export default function Home() {
         </div>
 
         <div className={styles.bodyText}>
-          Previously, I graduated in Computer Science from Brown University and
-          I interned at a{" "}
+          I graduated from Brown University in 2025 with a computer science
+          degree. While in school, I interned at a{" "}
           <Link
             target="_blank"
             className={styles.link}
@@ -69,13 +69,13 @@ export default function Home() {
           >
             <div className={styles.cook}>cook</div>
           </Link>{" "}
-          fancy meals, and{" "}
+          good food, and{" "}
           <Link
             className={styles.link}
             target="_blank"
             href="https://www.youtube.com/watch?v=slDJF2d0NTE"
           >
-            <div className={styles.languages}>read about ancient history</div>
+            <div className={styles.languages}>read books</div>
           </Link>
           .
         </div>
