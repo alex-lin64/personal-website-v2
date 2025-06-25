@@ -33,7 +33,7 @@ export default function Home() {
           <Link
             target="_blank"
             className={styles.link}
-            href="https://bostonfusion.com/"
+            href="https://www.blackrock.com/us/individual/"
           >
             Blackrock
           </Link>{" "}
