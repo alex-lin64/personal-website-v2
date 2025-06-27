@@ -1,6 +1,6 @@
 const workData = [
   {
-    startDate: "July",
+    startDate: "July 2025",
     endDate: "Present",
     title: "Software Engineer",
     company: "Google",

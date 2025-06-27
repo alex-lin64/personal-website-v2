@@ -1,5 +1,15 @@
 const projectData = [
   {
+    title: "Cindy Zhu Art Portfolio",
+    projImage: "/assets/art-portfolio.webp",
+    projectLink: "https://cindyzhuart.vercel.app",
+    shortLink: "Website",
+    year: 2025,
+    madeAt: "",
+    description: "Art portfolio developed for Cindy Zhu, pro bono",
+    builtWith: ["Javascript", "React", "Cloudinary CDN", "Next.js", "Vercel"],
+  },
+  {
     title: "CS1420 Course Website (2025)",
     projImage: "/assets/cs1420-site-s25.webp",
     projectLink: "https://stephenbach.github.io/cs142-s25-www/",
