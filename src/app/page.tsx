@@ -12,12 +12,10 @@ export default function Home() {
           {" "}
           Hello, I'm Alex <span className={styles.wave}>👋</span>
         </p>
-        <p className={styles.subheadingText}>software engineer</p>
-        <p className={styles.subheadingText}>business man</p>
       </div>
       <div className={styles.body}>
         <div className={styles.bodyText}>
-          I am a software engineer at{" "}
+          I am currently a software engineer at{" "}
           <Link
             target="_blank"
             className={styles.link}
@@ -28,8 +26,9 @@ export default function Home() {
         </div>
 
         <div className={styles.bodyText}>
-          I graduated from Brown University in 2025 with a computer science
-          degree. While in school, I interned at{" "}
+          Here's my 9-5 corporate cog elevator pitch: I graduated from Brown
+          University in 2025 with a computer science degree. Previously, I
+          interned at{" "}
           <Link
             target="_blank"
             className={styles.link}
@@ -37,7 +36,7 @@ export default function Home() {
           >
             Blackrock
           </Link>{" "}
-          as a software engineer, a{" "}
+          , a{" "}
           <Link
             target="_blank"
             className={styles.link}
@@ -45,7 +44,7 @@ export default function Home() {
           >
             defense-contractor
           </Link>{" "}
-          as a machine learning engineer and a medical tech startup{" "}
+          a medical tech{" "}
           <Link
             className={styles.link}
             target="_blank"
@@ -53,50 +52,24 @@ export default function Home() {
           >
             startup
           </Link>{" "}
-          as a backend engineer.
+          .
         </div>
 
         <div className={styles.bodyText}>
-          These days, I am focused on building an ecommerce company, training
-          BJJ, and enjoying life.
-        </div>
-        <div className={styles.bodyText}>
-          When I have time to spare, I love to play{" "}
-          <Link
-            className={styles.link}
-            target="_blank"
-            href="https://www.youtube.com/watch?v=pMJ0-1GGf5k&ab_channel=penabaza"
-          >
-            <div className={styles.tennis}>tennis</div>
-          </Link>
-          ,{" "}
-          <Link
-            className={styles.link}
-            target="_blank"
-            href="https://www.maangchi.com/"
-          >
-            <div className={styles.cook}>cook</div>
-          </Link>{" "}
-          good food, and{" "}
-          <Link
-            className={styles.link}
-            target="_blank"
-            href="https://www.youtube.com/watch?v=slDJF2d0NTE"
-          >
-            <div className={styles.languages}>read books</div>
-          </Link>
-          .
+          And here are my real thoughts: I roll with other men at least 3 times
+          a week, live a meaningul life, and I am learning to tell really good
+          stories.
         </div>
         <div className={styles.bodyText}>
           Shoot me an email at{" "}
           <Link
             className={styles.link}
             target="_blank"
-            href="mailto:lpecommerce2@brown.edu"
+            href="mailto:alexlinpov@gmail.com"
           >
-            lpecommerce2@gmail.com
+            alexlinpov@gmail.com
           </Link>{" "}
-          for business inquiries 😉
+          if you have business inquiries 😉
         </div>
 
         <div className={styles.headshot}>

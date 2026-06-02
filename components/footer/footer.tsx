@@ -1,9 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { FaGithub, FaYoutube } from "react-icons/fa";
+
 import { FaGoodreads } from "react-icons/fa";
 
 import Link from "next/link";
@@ -21,7 +20,7 @@ export default function Footer() {
     const fetchRepositoryInfo = async () => {
       try {
         const response = await axios.get(
-          "https://api.github.com/repos/alex-lin64/MyWebsite"
+          "https://api.github.com/repos/alex-lin64/MyWebsite",
         );
         // Extract last updated timestamp
         const updatedTimestamp = response.data.updated_at;
@@ -51,28 +50,19 @@ export default function Footer() {
               <li className={styles.listItem}>
                 <Link
                   target="_blank"
+                  href="https://www.youtube.com/channel/UCzYoy3l_3a4Ye2u7sib8IPg"
+                  className={styles.link}
+                >
+                  <FaYoutube />
+                </Link>
+              </li>
+              <li className={styles.listItem}>
+                <Link
+                  target="_blank"
                   href="https://github.com/alex-lin64"
                   className={styles.link}
                 >
                   <FaGithub />
-                </Link>
-              </li>
-              <li className={styles.listItem}>
-                <Link
-                  target="_blank"
-                  href="https://www.linkedin.com/in/alexlin64/"
-                  className={styles.link}
-                >
-                  <FaLinkedin />
-                </Link>
-              </li>
-              <li className={styles.listItem}>
-                <Link
-                  target="_blank"
-                  href="mailto:alex_lin@brown.edu"
-                  className={styles.link}
-                >
-                  <MdEmail />
                 </Link>
               </li>
               <li className={styles.listItem}>
