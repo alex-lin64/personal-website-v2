@@ -50,7 +50,7 @@ export default function Footer() {
               <li className={styles.listItem}>
                 <Link
                   target="_blank"
-                  href="https://www.youtube.com/channel/UCzYoy3l_3a4Ye2u7sib8IPg"
+                  href="https://youtube.com/channel/UC6WoPxpdIaVCClfhf7_Mp2g/"
                   className={styles.link}
                 >
                   <FaYoutube />
