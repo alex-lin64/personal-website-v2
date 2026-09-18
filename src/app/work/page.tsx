@@ -26,7 +26,7 @@ export default function WorkPage() {
       </div>
       <div className={styles.closer}>
         <Link
-          href="./alex_lin_resume.pdf"
+          href="https://www.youtube.com/shorts/-vCwcKgrCUQ"
           className={styles.link}
           target="_blank"
         >

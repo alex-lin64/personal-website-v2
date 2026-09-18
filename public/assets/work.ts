@@ -1,12 +1,21 @@
 const workData = [
   {
-    startDate: "July 2025",
+    startDate: "August 2026",
     endDate: "Present",
+    title: "Youtuber",
+    company: "Alex Lin Videos",
+    companyLink: "https://www.youtube.com/channel/UC6WoPxpdIaVCClfhf7_Mp2g",
+    description: "Check out my videos",
+    skills: ["Larping", "Gooning", "Grifting"],
+  },
+  {
+    startDate: "July 2025",
+    endDate: "August 2026",
     title: "Software Engineer",
     company: "Google",
     companyLink: "https://www.google.com",
-    description: "GCP",
-    skills: [],
+    description: "Basically Datadog but shittier",
+    skills: ["C++", "Bazel", "Dick riding our AI overlords"],
   },
   {
     startDate: "June",

@@ -8,7 +8,7 @@ interface ImageProps {
 
 const ImageModule: React.FC<ImageProps> = ({ imagePath }) => {
   return (
-    <div className={styles.containter}>
+    <div className={styles.container}>
       <div className={styles.item}>
         <Image
           src={imagePath}

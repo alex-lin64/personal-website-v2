@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <div className={styles.body}>
         <div className={styles.bodyText}>
-          I just wanna live a happy life.
+          I can't say I ain't black
         </div>
 
         <div className={styles.headshot}>
