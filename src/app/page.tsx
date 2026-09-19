@@ -9,15 +9,10 @@ export default function Home() {
     <div className={styles.wrapper}>
       <div className={styles.heading}>
         <p className={styles.headingText}>
-          {" "}
-          Who's in Paris? <span className={styles.wave}>👋</span>
+          Who's in Paris? <span className={styles.wave}>👲</span>
         </p>
       </div>
       <div className={styles.body}>
-        <div className={styles.bodyText}>
-          I can't say I ain't black
-        </div>
-
         <div className={styles.headshot}>
           <ImageModule imagePath="/assets/profile_pic_fun.png" />
         </div>
